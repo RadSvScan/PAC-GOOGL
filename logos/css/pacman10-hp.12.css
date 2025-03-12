@@ -1,0 +1,126 @@
+/* Общие стили для темного фона */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #1e1e1e; /* Темный фон для сайта */
+  align-items: flex-start; /* Все элементы выравниваются по левому краю */
+  justify-content: flex-start; /* Все элементы сверху */
+}
+
+/* Подключаем шрифт с использованием @font-face */
+@font-face {
+  font-family: 'MyCustomFont'; /* Имя шрифта */
+  src: url('font/PxPlus_IBM_EGA_8x8.ttf') format('truetype'); /* Путь к файлу TTF */
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Применяем шрифт к элементам */
+body {
+  font-family: 'MyCustomFont', sans-serif; /* Применяем шрифт ко всему тексту */
+}
+
+/* Применяем шрифт к кнопке */
+.start-btn {
+  font-family: 'MyCustomFont', sans-serif; /* Применяем шрифт к кнопке */
+}
+
+/* Контейнер для игры (всегда в верхней части, в левом верхнем углу) */
+#game-container {
+  position: absolute; /* Абсолютное позиционирование */
+  top: -0px; /* Отступ сверху */
+  left: 20px; /* Отступ слева */
+  display: flex;
+  justify-content: flex-start; /* Игра выравнивается слева */
+}
+
+/* Стиль для лого/игрового окна */
+#hplogo {
+  transform: scale(2.7);
+  transform-origin: top left;
+  background: black url(../pacman10-hp.2.png) 0 0 no-repeat;
+  height: 208px;
+  width: 484px;
+  margin-bottom: 20px; /* Отступ между окном игры и кнопкой */
+  position: relative;
+  -webkit-image-rendering: pixelated; /* Для браузеров на базе Webkit */
+  -moz-image-rendering: -moz-crisp-edges; /* Для Firefox */
+  image-rendering: pixelated; /* Для других браузеров */
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+}
+
+/* Контейнер для кнопки */
+#button-container {
+  margin-top: auto; /* Кнопка всегда будет внизу */
+  margin-bottom: 20px; /* Расстояние от нижнего края */
+  text-align: center; /* Центрирование кнопки по горизонтали */
+  padding-left: 560px; /* Сдвигаем кнопку на 400px вправо */
+  margin-top: 600px; /* Поднимаем кнопку на 50px */
+}
+
+/* Кнопка "Start" */
+.start-btn {
+  background-color: #333; /* Темный фон кнопки */
+  color: #f1c40f; /* Яркий желтый цвет текста */
+  font-family: 'MyCustomFont', sans-serif; /* Применяем шрифт к кнопке */
+  font-size: 20px;
+  padding: 15px 30px;
+  border: 2px solid #f1c40f; /* Желтая граница */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(241, 196, 15, 0.7);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.start-btn:hover {
+  background-color: #f1c40f; /* Изменение фона на желтый при наведении */
+  color: #1e1e1e; /* Темный текст на кнопке */
+  box-shadow: 0 0 15px rgba(241, 196, 15, 1); /* Яркое свечение при наведении */
+}
+
+.start-btn:active {
+  background-color: #e67e22; /* Оранжевый цвет при нажатии */
+  color: #fff;
+}
+
+/* Контейнер для описания */
+#description-container {
+  display: flex;
+  flex-direction: row-reverse; /* Изменяем порядок: сначала текст, потом картинка */
+  align-items: center; /* Центрируем элементы по вертикали */
+  margin-top: 20px; /* Отступ сверху */
+}
+
+/* Контейнер для текста */
+#description-text {
+  flex: 1; /* Позволяет тексту занимать оставшееся пространство */
+  margin-right: 20px; /* Отступ справа от текста */
+  color: #fff; /* Белый текст */
+  font-family: 'MyCustomFont', sans-serif; /* Применяем шрифт */
+  font-size: 18px; /* Размер шрифта */
+}
+
+/* Контейнер для изображения */
+#description-image img {
+  width: 150px; /* Размер изображения */
+  height: auto;
+  border-radius: 8px; /* Округление углов изображения */
+}
+
+
+
+
+
+
+
+
+
+
+
+
